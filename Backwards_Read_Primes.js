@@ -9,7 +9,7 @@ function backwardsPrime(start, stop){
   // function to determine if a number is Prime
   function isPrime(num) {
     if (num < 2) return false;
-    for (let i=2; i<Math.sqrt(num);i++) {
+    for (let i=2; i<Math.sqrt(num)+1;i++) {
       if (num % i === 0) return false;
       }
     return true;
@@ -24,7 +24,7 @@ function backwardsPrime(start, stop){
 
 // if a number isPrime and isBackwards, push it to array
 let resultsArr = [];
-for (let i=start; i<stop; i++) {
+for (let i=start; i<=stop; i++) {
   if (isPrime(i))
    if (isPrimeBackwards(i)) resultsArr.push(i)
   }
