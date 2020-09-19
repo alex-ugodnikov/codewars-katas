@@ -28,3 +28,13 @@ function greetDevelopers(list) {
   });
   return list;
 }
+
+// Kata: https://www.codewars.com/kata/5827acd5f524dd029d0005a4/javascript
+
+// My Solution: 
+
+function isRubyComing(list) {
+  // Using some function to 
+  const isRuby = (stud) => stud.language === 'Ruby';
+  return list.some(isRuby);
+}
