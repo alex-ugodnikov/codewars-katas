@@ -38,3 +38,14 @@ function isRubyComing(list) {
   const isRuby = (stud) => stud.language === 'Ruby';
   return list.some(isRuby);
 }
+
+// Kata: https://www.codewars.com/kata/5827bc50f524dd029d0005f2/javascript
+
+// My solution:
+
+function getFirstPython(list) {
+ // Thank you for checking out my kata :)
+const getFP = stud => stud.language === 'Python'
+const found = list.find(getFP);
+return found !== undefined ? `${found.firstName}, ${found.country}` : `There will be no Python developers`;
+}
